@@ -86,8 +86,10 @@ values ('Camiseta', 75.00, 7)
 insert into
     Producto
 values ('Teclado', 150.00, 3)
---Condicion
-insert into CondicionPago values ('Contado');
+    --Condicion
+insert into
+    CondicionPago
+values ('Contado');
 
 insert into CondicionPago values ('Anticipo 50%');
 
@@ -186,8 +188,9 @@ insert into Factura values ( 4, 5, 2, '2024-05-05', '2024-06-25' );
 
 insert into Factura values ( 5, 2, 6, '2024-05-30', '2025-01-30' );
 
-select * from Factura
---Factura_producto
+select *
+from Factura
+    --Factura_producto
 insert into
     FacturaProducto
 values (1, 1)
@@ -233,10 +236,24 @@ insert into CajaBanco values ( 2, 9, '2024-05-10', 43.75, 481.25 );
 insert into CajaBanco values ( 4, 10, '2024-05-30', 225.00, 225.00 );
 
 --GuiaAlmacen
-insert into GuiaAlmacen values (1, '1-001', '2024-01-05');
+
+-- insert into GuiaAlmacen values ( 1, '1-001', '2024-01-05', NULL );
 
 insert into
-    GuiaAlmacen
+    GuiaAlmacen (
+        ProveedorID,
+        NumeroGuia,
+        Fecha
+    )
+values (1, '1-001', '2024-01-05');
+
+insert into
+    GuiaAlmacen (
+        ProveedorID,
+        NumeroGuia,
+        Fecha,
+        Detalles
+    )
 values (
         2,
         '2-022',
@@ -244,21 +261,43 @@ values (
         'Carga ligera'
     );
 
-insert into GuiaAlmacen values (3, '3-345', '2024-02-20');
-
-insert into GuiaAlmacen values (4, '4-451', '2024-02-25');
+insert into
+    GuiaAlmacen (
+        ProveedorID,
+        NumeroGuia,
+        Fecha
+    )
+values (3, '3-345', '2024-02-20');
 
 insert into
-    GuiaAlmacen
+    GuiaAlmacen (
+        ProveedorID,
+        NumeroGuia,
+        Fecha
+    )
+values (4, '4-451', '2024-02-25');
+
+insert into
+    GuiaAlmacen (
+        ProveedorID,
+        NumeroGuia,
+        Fecha,
+        Detalles
+    )
 values (
         5,
         '5-045',
         '2024-03-03',
-        'Productos fragiles'
+        'Productos frágiles'
     );
 
 insert into
-    GuiaAlmacen
+    GuiaAlmacen (
+        ProveedorID,
+        NumeroGuia,
+        Fecha,
+        Detalles
+    )
 values (
         6,
         '6-078',
@@ -267,16 +306,26 @@ values (
     );
 
 insert into
-    GuiaAlmacen
+    GuiaAlmacen (
+        ProveedorID,
+        NumeroGuia,
+        Fecha,
+        Detalles
+    )
 values (
         7,
         '7-075',
         '2024-04-05',
-        'Producto fragil'
+        'Producto frágil'
     );
 
 insert into
-    GuiaAlmacen
+    GuiaAlmacen (
+        ProveedorID,
+        NumeroGuia,
+        Fecha,
+        Detalles
+    )
 values (
         6,
         '8-078',
@@ -284,9 +333,21 @@ values (
         'Producto pesado'
     );
 
-insert into GuiaAlmacen values (7, '9-075', '2024-05-05');
+insert into
+    GuiaAlmacen (
+        ProveedorID,
+        NumeroGuia,
+        Fecha
+    )
+values (7, '9-075', '2024-05-05');
 
-insert into GuiaAlmacen values (7, '10-075', '2024-06-01');
+insert into
+    GuiaAlmacen (
+        ProveedorID,
+        NumeroGuia,
+        Fecha
+    )
+values (7, '10-075', '2024-06-01');
 
 --Empleado almacen
 insert into EmpleadoAlmacen values (1, 1);
