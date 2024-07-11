@@ -26,17 +26,6 @@ insert into Empleado values ('Jordy Stubbins','9770 Rate Lane','(324) 516-4772')
 insert into Empleado values ('Josue Preston','228 Train Ave E','(860) 837-1195');
 insert into Empleado values ('Alejandro Chang','2000 Harmony Lane','(944) 046-7220');
 
-insert into CajaBanco values (5,1, '2024-07-01', 100.00);
-insert into CajaBanco values (3,2, '2024-07-11', 30.00);
-insert into CajaBanco values (2,3, '2024-07-24', 375.00);
-insert into CajaBanco values (5,4, '2024-07-09', 30.00);
-insert into CajaBanco values (2,5, '2024-07-10', 250.00);
-insert into CajaBanco values (1,6, '2024-06-24', 20.00);
-insert into CajaBanco values (2,7, '2024-06-10', 41.70);
-insert into CajaBanco values (4,8, '2024-06-28', 200.00);
-insert into CajaBanco values (2,9, '2024-07-02', 262.50);
-insert into CajaBanco values (4,10, '2024-07-15', 125.00);
-
 insert into Factura values(1,1,'2024-07-01', '2024-07-01');
 insert into Factura values(5,2,'2024-06-11', '2024-08-01');
 insert into Factura values(7,2,'2024-06-01', '2024-09-01');
@@ -48,7 +37,17 @@ insert into Factura values(6,2,'2024-06-20', '2024-08-20');
 insert into Factura values(4,2,'2024-06-05', '2024-08-25');
 insert into Factura values(5,4,'2024-06-30', '2024-09-30');
 
-SELECT* FROM GuiaAlmacen
+insert into CajaBanco values (5,1, '2024-07-01', 100.00);
+insert into CajaBanco values (3,2, '2024-07-11', 30.00);
+insert into CajaBanco values (2,3, '2024-07-24', 375.00);
+insert into CajaBanco values (5,4, '2024-07-09', 30.00);
+insert into CajaBanco values (2,5, '2024-07-10', 250.00);
+insert into CajaBanco values (1,6, '2024-06-24', 20.00);
+insert into CajaBanco values (2,7, '2024-06-10', 41.70);
+insert into CajaBanco values (4,8, '2024-06-28', 200.00);
+insert into CajaBanco values (2,9, '2024-07-02', 262.50);
+insert into CajaBanco values (4,10, '2024-07-15', 125.00);
+
 insert into GuiaAlmacen values (1,'1-001', '2024-07-01', 1.5);
 insert into GuiaAlmacen values (2,'2-022', '2024-06-12', 10.50 );
 insert into GuiaAlmacen values (3,'3-345', '2024-06-03', 15.00 );
@@ -59,7 +58,6 @@ insert into GuiaAlmacen values (7,'7-075', '2024-06-05', 10.70  );
 insert into GuiaAlmacen values (1,'8-078', '2024-06-22', 15.00 );
 insert into GuiaAlmacen values (5,'9-075', '2024-06-06', 1.00 );
 insert into GuiaAlmacen values (3,'10-075','2024-07-02', 4.00 );
-
 
 insert into Producto values('Mouse', 50.00, 2)
 insert into Producto values('Lapicero', 3.00, 20)
@@ -82,7 +80,6 @@ insert into FacturaProducto values (7,7);
 insert into FacturaProducto values (8,8);
 insert into FacturaProducto values (9,9);
 insert into FacturaProducto values (10,10);
-SELECT* FROM EmpleadoAlmacen
 
 insert into EmpleadoAlmacen values (1, 1);
 insert into EmpleadoAlmacen values (2, 2);
@@ -94,5 +91,3 @@ insert into EmpleadoAlmacen values (7, 7);
 insert into EmpleadoAlmacen values (6, 8);
 insert into EmpleadoAlmacen values (7, 9);
 insert into EmpleadoAlmacen values (7, 10);
-
-
